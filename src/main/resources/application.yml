@@ -4,6 +4,6 @@ server:
 spring:
   data:
     mongodb:
-      uri: mongodb://admin:admin123@mongo:27017
+      uri: mongodb://admin:admin123@mongo:27017/db_crud_webflux
   application:
     name: crud_webflux_api
