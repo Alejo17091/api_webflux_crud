@@ -2,7 +2,7 @@ pipeline {
     agent any
 
   tools {
-        maven 'Maven 3.9.10' // 👈 Debe coincidir exactamente con el nombre que configuraste en Jenkins
+        maven 'Maven 3.9.10' //  Debe coincidir exactamente con el nombre que configuraste en Jenkins
     }
 
     environment {
@@ -42,10 +42,10 @@ pipeline {
 
     post {
         success {
-            echo '✅ Pipeline finalizado correctamente.'
+            echo 'Pipeline finalizado correctamente.'
         }
         failure {
-            echo '❌ Error en la ejecución del pipeline.'
+            echo ' Error en la ejecución del pipeline.'
         }
     }
 }
