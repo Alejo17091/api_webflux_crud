@@ -1,6 +1,10 @@
 pipeline {
     agent any
 
+  tools {
+        maven 'Maven 3.9.10' // 👈 Debe coincidir exactamente con el nombre que configuraste en Jenkins
+    }
+
     environment {
         DOCKER_IMAGE = "alejo17091/spring-webflux-api:latest"
     }
